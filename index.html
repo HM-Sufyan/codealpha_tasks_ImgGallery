@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Gallery</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_content">
+          <div class="logo_container">
+            <a href="index.html"><ion-icon name="images-outline"></ion-icon></a>
+            <p class="logo_name">MY GALLERY</p>
+          </div>
+          <div class="nav_container" onclick="toogle()">
+            <div class="toogle_icon">
+              <ion-icon id="grid_icon" name="grid-outline"></ion-icon>
+              <ion-icon id="slide_icon" name="albums-outline"></ion-icon>
+            </div>
+            <div class="toogle">
+              <p class="toogle_text" id="toogle_text">Column View</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="hero" id="hero_section">
+      <!-- ================= Column View =============== -->
+      <div class="grid_container" id="grid_container">
+        <div class="item1 AllItems" id="item1"></div>
+        <div class="item2 AllItems" id="item2"></div>
+        <div class="item3 AllItems" id="item3"></div>
+        <div class="item4 AllItems" id="item4"></div>
+        <div class="item5 AllItems" id="item5"></div>
+        <div class="item6 AllItems" id="item6"></div>
+        <div class="item7 AllItems" id="item7"></div>
+        <div class="item8 AllItems" id="item8"></div>
+        <div class="item9 AllItems" id="item9"></div>
+        <div class="item10 AllItems" id="item10"></div>
+        <div class="item11 AllItems" id="item11"></div>
+        <div class="item12 AllItems" id="item12"></div>
+      </div>
+      <!-- ================= Slide View =============== -->
+
+      <div class="slide_container" id="slide_container">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/ai1.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai2.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai3.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai4.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai5.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai6.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai7.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai8.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai9.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai10.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai11.jpg" /></div>
+            <div class="swiper-slide"><img src="img/ai12.jpg" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="foot">
+        <p>Copyright © 2024 Text, Inc. All rights reserved - H.M.Sufyan</p>
+      </div>
+    </footer>
+
+    <!-- ====================== Icon script ================== -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- ============================== JS Connect ==================== -->
+    <script src="main.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        //   slidesPerView: 2,
+        grabCursor: true,
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+  </body>
+</html>

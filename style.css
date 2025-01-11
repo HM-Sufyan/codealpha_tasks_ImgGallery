@@ -1,0 +1,278 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  height: 7vh;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.nav_content {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ion-icon {
+  font-size: 34px;
+  color: white;
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 16%;
+  cursor: pointer;
+}
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 13%;
+  cursor: pointer;
+}
+
+.logo_name {
+  font-size: 20px;
+  color: white;
+  font-family: cursive;
+  font-weight: bold;
+}
+#grid_icon {
+  display: block;
+  font-size: 30px;
+  user-select: none;
+}
+
+#slide_icon {
+  display: none;
+  user-select: none;
+}
+
+.toogle_text {
+  font-size: 20px;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+  user-select: none;
+}
+.hero {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.hero_slider {
+  width: 100%;
+  height: 93vh;
+}
+.item1 {
+  background-image: url(img/ai1.jpg);
+  filter: grayscale(1);
+  scale: 1;
+}
+.item1:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item2 {
+  background-image: url(img/ai2.jpg);
+  filter: grayscale(1);
+}
+.item2:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item3 {
+  background-image: url(img/ai3.jpg);
+  filter: grayscale(1);
+}
+.item3:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item4 {
+  background-image: url(img/ai4.jpg);
+  filter: grayscale(1);
+}
+.item4:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item5 {
+  background-image: url(img/ai5.jpg);
+  filter: grayscale(1);
+}
+.item5:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item6 {
+  background-image: url(img/ai6.jpg);
+  filter: grayscale(1);
+}
+.item6:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item7 {
+  background-image: url(img/ai7.jpg);
+  filter: grayscale(1);
+}
+.item7:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item8 {
+  background-image: url(img/ai8.jpg);
+  filter: grayscale(1);
+}
+.item8:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item9 {
+  background-image: url(img/ai9.jpg);
+  filter: grayscale(1);
+}
+.item9:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item10 {
+  background-image: url(img/ai10.jpg);
+  filter: grayscale(1);
+}
+.item10:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item11 {
+  background-image: url(img/ai11.jpg);
+  filter: grayscale(1);
+}
+.item11:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+.item12 {
+  background-image: url(img/ai12.jpg);
+  filter: grayscale(1);
+}
+.item12:hover {
+  filter: grayscale(0);
+  cursor: pointer;
+  scale: 1.1;
+  z-index: 1;
+}
+
+.grid_container {
+  width: 90%;
+  height: 79vh;
+  color: wheat;
+  font-size: 20px;
+  display: grid;
+  grid-auto-rows: 100px;
+  grid-template-rows: repeat(3, 3fr);
+  grid-template-columns: repeat(4, 3fr);
+  position: relative;
+}
+
+.run {
+  position: absolute;
+  width: 80%;
+  height: 70vh;
+  top: 28px;
+  left: 10.5%;
+  z-index: 1;
+  scale: 1.1;
+  filter: none;
+}
+#close_icon {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 6%;
+  cursor: pointer;
+  color: white;
+}
+#close_icon:hover {
+  color: gray;
+}
+
+.AllItems_none {
+  display: none;
+}
+
+/* ============== Slide View ================== */
+.slide_container {
+  display: none;
+}
+.swiper {
+  width: 100%;
+  height: 93vh;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #4d4d4d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: drop-shadow(0 0 10px rgb(0, 0, 0));
+}
+
+footer {
+  height: 5vh;
+  background-color: #353535;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot {
+  text-align: center;
+}
+.foot p {
+  color: white;
+  font-family: cursive;
+}
